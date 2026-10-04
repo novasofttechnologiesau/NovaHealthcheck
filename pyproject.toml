@@ -1,0 +1,11 @@
+[project]
+name = "novahealthcheck"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = ["fastapi>=0.115,<1"]
+[tool.hatch.build.targets.wheel]
+packages = ["src/novahealthcheck"]
+license = {text = "Apache-2.0"}
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
